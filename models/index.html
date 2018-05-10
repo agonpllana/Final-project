@@ -1,0 +1,105 @@
+<html>
+
+<head>
+  <title>Products</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3> Shto Kontraten:</h3>
+        <form id="product-form">
+          <div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Nr. rendor i prokurimit</label>
+                <input type="text" id="nrProkurimit" class="form-control" placeholder="Nr. rendor i prokurimit">
+              </div>
+              <div class="form-group col-md-6">
+                <label>Lloji i prokurimit</label>
+                <input type="text" id="llojiProkurimit" class="form-control" placeholder="Lloji i prokurimit">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Aktiviteti i prokurimit</label>
+              <input type="text" id="aktivitetiProkurimit" class="form-control" placeholder="Aktiviteti i prokurimit">
+            </div>
+            <div class="form-group col-md-6">
+              <label>Data e inicimit t&#235; aktivitetit t&#235; prokurimit</label>
+              <input type="date" id="dataInicimit" class="form-control" placeholder="04/04/2018">
+            </div>
+            <div class="form-group col-md-6">
+              <label>Data e publikimit t&#235;
+                <br/>shpalljes</label>
+              <input type="date" id="dataPublikimit" class="form-control" placeholder="03.03.2018">
+            </div>
+            <br/>
+            <br/>
+            <div class="form-group">
+              <label>Data e n&#235;nshkrimit t&#235; kontrat&#235;s</label>
+              <input type="date" id="dataNenshkrimit" class="form-control" placeholder="03.03.2018">
+            </div>
+            <div class="form-group ">
+              <div class="form-group col-md-6">
+                <label>Data p&#235;r implementimin e kontrat&#235;s</label>
+                <input type="date" id="dataImplementimit" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                <label style="color:white;">Tkesti</label>
+                <input type="date" id="dataImplementimit1" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Data e p&#235;rmbylljes s&#235; kontrat&#235;s(data e pranimit t&#235; p&#235;rkohsh&#235;m / preliminar)
+              </label>
+              <input type="date" id="dataPermbylljes" class="form-control">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">&#199;mimi i kontrates(duke perfshire te gjitha taksat)</label>
+                <input type="number" id="cmimiKontrates" class="form-control" placeholder="&#199;mimi i kontrates">
+              </div>
+              <div class="form-group col-md-6">
+                <label>&#199;mimi total i paguar
+                  <br /> p&#235;r kontrat&#235;n</label>
+                <input type="number" id="cmimiTotal" class="form-control" placeholder="&#199;mimi total">
+              </div>
+            </div>
+            <label>Emri i t&#235; cilit i &#235;sht&#235; dh&#235;n&#235; kontrata</label>
+            <input type="text" id="emriKontratuesit" class="form-control" placeholder="Emri dhe mbiemri">
+            <div style="text-align:center; padding:20px;">
+              <button id="submit-btn" class="btn btn-lg btn-primary btn-block" type="submit">D&#235;rgo</button>
+              <button type="submit" class="btn btn-block btn-secondary">Fshij</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <table style="width:100%" id="kontratat" class="table table-striped">
+          <thead>
+            <h3 class="text-dark bg-light text-center">Contracts</h3>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+
+</body>
+
+</html>
+<!--
